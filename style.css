@@ -4,6 +4,12 @@ body {
   padding: 0;
   background-color: #fff;
   color: #111;
+  line-height: 1.6;
+}
+
+a {
+  color: #0099ff;
+  text-decoration: none;
 }
 
 .navbar {
@@ -44,6 +50,7 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -102,7 +109,6 @@ body {
   opacity: 0.85;
 }
 
-/* Hover state */
 .project-card:hover {
   transform: scale(0.97);
 }
@@ -111,19 +117,17 @@ body {
   background: linear-gradient(to bottom, rgba(189,34,34,0.8), rgba(189,34,34,0.9));
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #111;
-  background: #fff;
-  line-height: 1.6;
+.project-hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f4f4f4;
 }
-a { color: #0099ff; text-decoration: none; }
-.navbar { display: flex; justify-content: space-between; padding: 2rem; }
-.nav-links a { margin-left: 1.5rem; font-weight: 500; }
-.project-hero { padding: 4rem 2rem; text-align: center; background: #f4f4f4; }
-.project-hero h1 { margin: 0; font-size: 2.5rem; }
+
+.project-hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
 .project-intro,
 .project-goals,
 .project-results,
@@ -132,10 +136,14 @@ a { color: #0099ff; text-decoration: none; }
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 .project-intro p,
 .project-goals ul,
 .project-results ul,
-.project-learnings ul { margin: 0.5rem 0; }
+.project-learnings ul {
+  margin: 0.5rem 0;
+}
+
 .project-images {
   display: flex;
   flex-wrap: wrap;
@@ -143,12 +151,20 @@ a { color: #0099ff; text-decoration: none; }
   gap: 1rem;
   padding: 2rem;
 }
+
 .project-images img {
   max-width: 100%;
   border-radius: 8px;
 }
+
 .project-back {
   text-align: center;
   margin: 3rem 0;
 }
-.footer { padding: 2rem; text-align: center; font-size: 0.9rem; color: #666; }
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
