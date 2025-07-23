@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkJoint – Hybrid Job Platform Redesign</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #111;
+        --bg-light: #f5f5f5;
+        --bg-dark: #111;
+        --text-light: #ffffff;
+        --text-dark: #111111;
+        --muted: #666;
+        --max-width: 900px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-dark);
+        background-color: white;
+        line-height: 1.6;
+      }
+
+      section {
+        padding: 4rem 1.5rem;
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+      }
+
+      h1, h2 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+
+      p, li {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      p {
+        margin-bottom: 1.25rem;
+      }
+
+      ul {
+        margin-left: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .mockup {
+        width: 100%;
+        border-radius: 16px;
+        margin: 2rem 0;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      }
+
+      .light-section {
+        background-color: var(--bg-light);
+      }
+
+      .dark-section {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+      }
+
+      .dark-section p,
+      .dark-section li {
+        color: #e2e2e2;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #aaa;
+        margin: 4rem 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="badge">2024 · UX / UI Design</div>
+        <h1>WorkJoint: Bridging Hybrid Work Gaps</h1>
+        <p>
+          I redesigned WorkJoint, a job platform connecting flexible workers with short-term employers across retail, warehouse, and hospitality. The platform was in beta and needed stronger UX to onboard users and build trust.
+        </p>
+        <img
+          src="images/workjoint-hero.jpg"
+          alt="WorkJoint home interface mockup"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h2>Problem & Research</h2>
+        <p>
+          Feedback from early users revealed onboarding drop-off, unclear application flows, and poor conversion due to low trust. I ran competitor UX reviews (JobToday, Indeed Flex), and simplified job matching through clearer labels and filters.
+        </p>
+        <ul>
+          <li>Redesigned onboarding to include tiered verification</li>
+          <li>Added profile completion prompts to encourage repeat usage</li>
+          <li>Visual hierarchy adjustments to reduce cognitive load</li>
+        </ul>
+        <img
+          src="images/workjoint-research.jpg"
+          alt="Screens from onboarding and verification flows"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <h2>Results</h2>
+        <p>
+          The improved flows resulted in a 37% increase in verified job seekers and a 25% increase in completed job applications. Employers also noted an improvement in candidate quality and fewer support queries.
+        </p>
+        <ul>
+          <li>37% more verified job seekers (month-on-month)</li>
+          <li>25% more successful application completions</li>
+          <li>50% fewer help desk tickets about profile issues</li>
+        </ul>
+        <img
+          src="images/workjoint-results.jpg"
+          alt="Live flow redesign comparison"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Anita Victor · anivation.co.uk
+    </footer>
+  </body>
+</html>
 
