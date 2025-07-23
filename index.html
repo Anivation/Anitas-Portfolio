@@ -6,6 +6,118 @@
   <title>Anita Victor | UX & Design Lead</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem;
+    }
+
+    .logo-email p {
+      margin: 0.2rem 0 0 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      background: #f5f5f5;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      background: none;
+      transition: background 0.3s ease;
+    }
+
+    .project-card .project-info h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .project-card .project-info p {
+      margin: 0.2rem 0 0;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .project-card .year {
+      align-self: flex-end;
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+
+    .project-card:hover {
+      transform: scale(0.97);
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -18,7 +130,6 @@
       <a href="#">About</a>
     </nav>
   </header>
-</html>
 
   <section class="hero">
     <h1>Anita is the UX & Design Lead<br />at The Perfume Shop</h1>
@@ -28,202 +139,51 @@
       user-centred solutions that drive results.
     </p>
   </section>
-</body>
 
- <section class="projects">
-  <a href="tps.html" class="project-card highlight">
-    <img src="images/portfolio mockup tps .png" alt="The Perfume Shop project" />
-    <div class="overlay">
-      <div class="project-info">
-        <h3>The Perfume Shop</h3>
-        <p>A/B Testing & UX/UI</p>
+  <section class="projects">
+    <a href="tps.html" class="project-card">
+      <img src="images/portfolio-mockup-tps.png" alt="The Perfume Shop project" />
+      <div class="overlay">
+        <div class="project-info">
+          <h3>The Perfume Shop</h3>
+          <p>A/B Testing & UX/UI</p>
+        </div>
+        <span class="year">2025</span>
       </div>
-      <span class="year">2025</span>
-    </div>
-  </a>
+    </a>
 
-  <a href="workjoint.html" class="project-card">
-    <img src="workjoint.jpg" alt="WorkJoint project">
-    <div class="overlay">
-      <div class="project-info">
-        <h3>WorkJoint</h3>
-        <p>UX/UI</p>
+    <a href="workjoint.html" class="project-card">
+      <img src="images/workjoint.jpg" alt="WorkJoint project">
+      <div class="overlay">
+        <div class="project-info">
+          <h3>WorkJoint</h3>
+          <p>UX/UI</p>
+        </div>
+        <span class="year">2024</span>
       </div>
-      <span class="year">2024</span>
-    </div>
-  </a>
+    </a>
 
-  <a href="scrapbays.html" class="project-card">
-    <img src="scrapbays.jpg" alt="Scrapbays project">
-    <div class="overlay">
-      <div class="project-info">
-        <h3>Scrapbays</h3>
-        <p>UX/UI</p>
+    <a href="scrapbays.html" class="project-card">
+      <img src="images/scrapbays.jpg" alt="Scrapbays project">
+      <div class="overlay">
+        <div class="project-info">
+          <h3>Scrapbays</h3>
+          <p>UX/UI</p>
+        </div>
+        <span class="year">2023</span>
       </div>
-      <span class="year">2023</span>
-    </div>
-  </a>
+    </a>
 
-  <a
-  href="https://www.youtube.com/watch?v=t41-oDigbdw"
-  class="project-card"
-  target="_blank"
-  rel="noopener noreferrer"
->
-    
-    <img src="listen.jpg" alt="Listen project">
-    <div class="overlay">
-      <div class="project-info">
-        <h3>Listen</h3>
-        <p>Case Study</p>
+    <a href="https://www.youtube.com/watch?v=t41-oDigbdw" class="project-card" target="_blank" rel="noopener noreferrer">
+      <img src="images/listen.jpg" alt="Listen project">
+      <div class="overlay">
+        <div class="project-info">
+          <h3>Listen</h3>
+          <p>Case Study</p>
+        </div>
+        <span class="year">2021</span>
       </div>
-      <span class="year">2021</span>
-    </div>
-  </a>
-</section>
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Design</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      padding: 50px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
-      border-radius: 25px;
-      border: 1px solid #000;
-      text-decoration: none;
-      color: #000;
-      background-color: #fff;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #000;
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-      }
-
-      p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <h2>A Master’s level Psychology degree from Kingston University. 8 years of educational and practical experience in user research.</h2>
-    <p>My journey in design started with a desire to understand and research. I find the relationship between humans and technology fascinating and enjoy the impact that great user experience can have on human empowerment and progression.</p>
-    <a href="#" class="button">Read more about Anita</a>
-  </div>
-
-</body>
-</html>
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Social Media Section</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min   margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    .container {
-      padding: 60px 20px;
-    }
-
-    .subtitle {
-      color: #ccc;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .social-icons a {
-      color: #fff;
-      font-size: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 600px) {
-      .title {
-        font-size: 1.5rem;
-      }
-
-      .social-icons a {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <div class="subtitle">Got a good idea?</div>
-    <div class="title">Let's create something great.</div>
-    <div class="social-icons">
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    </div>
-  </div>
-
+    </a>
+  </section>
 </body>
 </html>
