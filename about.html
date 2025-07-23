@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anita Victor | UX & Design Lead</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Anita Victor</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      color: #111;
-      background: #fff;
+      padding: 40px 20px;
+      background-color: #fff;
+      color: #333;
       line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .navbar {
@@ -55,6 +56,51 @@
       color: #333;
     }
 
+      .contact-section {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 2rem;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-section .button {
+      padding: 12px 24px;
+      border: 1px solid #fff;
+      border-radius: 40px;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .contact-section .button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .social-icons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+    }
+
   </style>
 </head>
 <body>
@@ -68,25 +114,108 @@
       <a href="#">About</a>
     </nav>
   </header>
+    }
 
-  <h1>Heyy!</h1>
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 28px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.skills li {
+      background-color: #f0f0f0;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="profile.jpg" alt="Anita Victor" class="profile-img" />
+
+  <h1>Hi, I’m Anita <span class="emoji">😊</span></h1>
 
   <div class="intro">
-    <p>I am a UX Designer based in London, currently leading the Design team at Particular Agency with a mission to eliminate poor user experience in the digital space, on project at a time. I bring a wealth of experience in creating intuitive and engaging digital experiences. With a keen eye for detail and a deep understanding of user behaviour, I specialise in translating complex ideas into user-friendly interfaces that drive results.</p>
+    <p>I am a UK Designer based in London, currently leading the Design team at Particular Agency with a mission to eliminate poor user experience in the digital space, one project at a time.</p>
   </div>
 
-  <div class="social-icons">
-    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
-    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-    <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
+  <div class="section">
+    <h2>Hard Skills</h2>
+    <ul class="skills">
+      <li>Prototyping</li>
+      <li>Figma</li>
+      <li>Sketch</li>
+      <li>Information Architecture</li>
+      <li>User Research</li>
+      <li>Quality Assurance</li>
+      <li>User Testing</li>
+    </ul>
   </div>
 
-  <div class="profile">
-    <img src="profile-picture.jpg" alt="Anita Victor" />
-    <div class="profile-info">
-      <h2>Anita Victor</h2>
-      <p>HEAD OF UX @ PARTICULAR AGENCY</p>
-    </div>
+  <div class="section">
+    <p>My journey into design began with a strong desire to understand how things work and my love for researching. With a BA in Psychology from the University of Northampton and an MSc from Kingston University, I’ve cultivated an analytical mindset and a deep understanding of user behaviour, which has become the foundation of my design approach. I thrive on creating solutions that not only look good but resonate with users on a psychological level.</p>
   </div>
+
+  <div class="section">
+    <h2>Soft Skills</h2>
+    <ul class="skills">
+      <li>Analytical Thinking</li>
+      <li>Teamwork</li>
+      <li>Leadership</li>
+      <li>User Advocacy</li>
+      <li>Story Telling</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <p>My career started in freelance, where I honed my skills in a variety of projects, then progressed to an app development agency, and I am now situated at a digital marketing agency. At each step, I've made measurable impact, from refining the user experience to shaping operational processes at a strategic level. My ability to combine research-driven insights with creative solutions has allowed me to optimize both design outcomes and internal workflows.</p>
+  </div>
+
 </body>
 </html>
+
