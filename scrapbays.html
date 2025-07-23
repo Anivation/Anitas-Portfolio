@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrapbays – End-to-End UX Redesign</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #111;
+        --bg-light: #f4f4f4;
+        --bg-dark: #222;
+        --text-light: #ffffff;
+        --text-dark: #111111;
+        --muted: #666;
+        --max-width: 900px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-dark);
+        background-color: white;
+        line-height: 1.6;
+      }
+
+      section {
+        padding: 4rem 1.5rem;
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+      }
+
+      h1, h2 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+
+      p, li {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      p {
+        margin-bottom: 1.25rem;
+      }
+
+      ul {
+        margin-left: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .mockup {
+        width: 100%;
+        border-radius: 16px;
+        margin: 2rem 0;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      }
+
+      .light-section {
+        background-color: var(--bg-light);
+      }
+
+      .dark-section {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+      }
+
+      .dark-section p,
+      .dark-section li {
+        color: #ddd;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #aaa;
+        margin: 4rem 0 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="badge">2023 · UX Redesign</div>
+        <h1>Scrapbays: A Seamless B2B Experience</h1>
+        <p>
+          I led the redesign of Scrapbays, a B2B marketplace for auto salvage. This included discovery,
+          user research, design systems, and responsive interface design for both buyer and seller flows.
+        </p>
+        <img
+          src="images/scrapbays-hero.jpg"
+          alt="Scrapbays platform mockup"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h2>Discovery & Strategy</h2>
+        <p>
+          I facilitated remote stakeholder workshops to identify business challenges and conducted competitor analysis
+          across UK-based platforms. User interviews highlighted key frustrations with legacy dashboards, speed, and lack
+          of trust signals.
+        </p>
+        <ul>
+          <li>Conducted competitor UX audits (CarTakeBack, Copart, ASM Auto)</li>
+          <li>Mapped out seller and buyer journeys</li>
+          <li>Developed key personas: Fleet Seller, Trade Buyer</li>
+        </ul>
+        <img
+          src="images/scrapbays-discovery.jpg"
+          alt="Discovery process and user flows"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <h2>Design & Results</h2>
+        <p>
+          I created a new visual identity and component library in Figma, optimised for mobile-first use cases. The design included: contextual onboarding,
+          real-time bidding interface, and clear listing standards.
+        </p>
+        <ul>
+          <li>Improved lead-to-listing ratio by 43%</li>
+          <li>Reduced drop-off at bid screen by 28%</li>
+          <li>Introduced trust signals (ratings, location map, seller profile)</li>
+        </ul>
+        <img
+          src="images/scrapbays-results.jpg"
+          alt="UX screens from redesigned Scrapbays app"
+          class="mockup"
+        />
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Anita Victor · anivation.co.uk
+    </footer>
+  </body>
+</html>
 
