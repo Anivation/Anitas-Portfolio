@@ -278,139 +278,72 @@
     </nav>
   </header>
 
-  <section class="hero-split">
-    <div class="hero-text">
-      <h1>The Perfume Shop</h1>
-      <div class="details">
-        <div>
-          <strong>ROLE</strong>
-          <p>UX/UI<br>A/B Testing<br>UX Strategy</p>
-        </div>
-        <div>
-          <strong>DATE</strong>
-          <p>2025</p>
-        </div>
-      </div>
-      <div class="task">
-        <strong>TASK</strong>
-        <p>
-          I lead the end-to-end UX strategy—driving experimentation, insight, and inclusive design.
-          I ran the A/B testing programme, optimising journeys through data-led hypotheses.
-          Using Contentsquare, I uncover behavioural friction to inform high-impact UX/UI improvements.
-          I also lead our 2025 Accessibility Redesign, targeting AA WCAG compliance.
-        </p>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/portfolio mockup tps .png" alt="PDP mockup on laptop" />
-    </div>
-  </section>
-
   <section class="carousel-header">
   <h2>A/B Testing <span>[EvolvAI]</span></h2>
 </section>
 
-  <div class="carousel-container">
-    <div class="carousel-track" id="carouselTrack">
-      <div class="carousel-card">
-        <div class="card-text">
-          <h2>Image Carousel Repostion</h2>
-          <p>This test is to ulitise real estate on the page efficiently, providing better visibility for other elements on the page</p>
-        </div>
-        <div class="card-image">
-          <img src="images/.png" alt="Side view" />
-        </div>
-      </div>
+<div class="carousel-container">
+  <div class="carousel-track" id="carouselTrack">
 
-      <div class="carousel-card">
-        <div class="card-text">
-          <h2>Price Strikethrough</h2>
-          <p>Better use of vertical hierarchy, improved above-the-fold visibility</p>
-        </div>
-        <div class="card-image">
-          <img src="images/macbook-side.png" alt="Macbook" />
-        </div>
+    <div class="carousel-card">
+      <div class="card-text">
+        <h2>Image Carousel Reposition</h2>
+        <p>This test is to utilise real estate on the page efficiently, providing better visibility for other elements on the page</p>
+      </div>
+      <div class="card-image">
+        <img src="images/carousel-1.png" alt="Reposition carousel" />
       </div>
     </div>
 
-    <div class="carousel-pagination" id="carouselDots">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
+    <div class="carousel-card">
+      <div class="card-text">
+        <h2>Price Strikethrough</h2>
+        <p>Better use of vertical hierarchy, improved above-the-fold visibility</p>
+      </div>
+      <div class="card-image">
+        <img src="images/price-strike.png" alt="Price strike" />
+      </div>
     </div>
+
+    <div class="carousel-card">
+      <div class="card-text">
+        <h2>Flexible Payment Options</h2>
+        <p>Flexible payment options placed by the price make higher-priced items feel more accessible and manageable.</p>
+      </div>
+      <div class="card-image">
+        <img src="images/flex-payment.png" alt="Flexible payment" />
+      </div>
+    </div>
+
+    <div class="carousel-card">
+      <div class="card-text">
+        <h2>Price/Size Styling</h2>
+        <p>Changed from circles to rectangles to utilise vertical space</p>
+      </div>
+      <div class="card-image">
+        <img src="images/price-size.png" alt="Price/size layout" />
+      </div>
+    </div>
+
+    <div class="carousel-card">
+      <div class="card-text">
+        <h2>Number of Reviews Visible</h2>
+        <p>Aids in decision-making, builds trust and credibility</p>
+      </div>
+      <div class="card-image">
+        <img src="images/reviews.png" alt="Review count" />
+      </div>
+    </div>
+
+  </div> <!-- End of carousel-track -->
+
+  <div class="carousel-pagination" id="carouselDots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <span class="dot" data-index="4"></span>
   </div>
-
-  <div class="carousel-card">
-        <div class="card-text">
-          <h2>Flexible Payment Options</h2>
-          <p>Flexible payment options placed by the price, make higher-priced items feel more accessible and manageable.</p>
-        </div>
-        <div class="card-image">
-          <img src="images/macbook-side.png" alt="Macbook" />
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-pagination" id="carouselDots">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-    </div>
-  </div>
-
-  <div class="carousel-card">
-        <div class="card-text">
-          <h2>Price/Size Styling</h2>
-          <p>Changed from circles to rectangles to utilise vertical space</p>
-        </div>
-        <div class="card-image">
-          <img src="images/macbook-side.png" alt="Macbook" />
-        </div>
-      </div>
-    </div>
-  
-    <div class="carousel-pagination" id="carouselDots">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-    </div>
-  </div>
-
-  <div class="carousel-card">
-        <div class="card-text">
-          <h2>Number of Reviews Visible</h2>
-          <p>Aids in decision-making, builds trust and credibility </p>
-        </div>
-        <div class="card-image">
-          <img src="images/macbook-side.png" alt="Macbook" />
-        </div>
-      </div>
-    </div>
-  
-    <div class="carousel-pagination" id="carouselDots">
-      <span class="dot active" data-index="0"></span>
-      <span class="dot" data-index="1"></span>
-    </div>
-  </div>
-  
-  <script>
-    const track = document.getElementById("carouselTrack");
-    const dots = document.querySelectorAll(".dot");
-    const cards = document.querySelectorAll(".carousel-card");
-    let cardWidth = cards[0].offsetWidth + 16;
-
-    dots.forEach(dot => {
-      dot.addEventListener("click", () => {
-        const index = parseInt(dot.dataset.index);
-        const offset = -index * cardWidth;
-        track.style.transform = `translateX(${offset}px)`;
-        dots.forEach(d => d.classList.remove("active"));
-        dot.classList.add("active");
-      });
-    });
-
-    window.addEventListener("resize", () => {
-      cardWidth = cards[0].offsetWidth + 16;
-      const activeIndex = [...dots].findIndex(dot => dot.classList.contains("active"));
-      track.style.transform = `translateX(-${activeIndex * cardWidth}px)`;
-    });
-  </script>
+</div>
 </body>
 </html>
