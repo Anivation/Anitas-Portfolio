@@ -7,337 +7,335 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
   <style>
-body {
-  font-family: 'Manrope', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #111;
-  background: #fff;
-  line-height: 1.6;
-}
+    body {
+      font-family: 'Manrope', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem;
-}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem;
+    }
 
-.logo-email strong {
-  display: block;
-  font-weight: 600;
-}
+    .logo-email strong {
+      display: block;
+      font-weight: 600;
+    }
 
-.logo-email p {
-  margin: 0.2rem 0 0 0;
-  font-size: 0.9rem;
-  color: #666;
-}
+    .logo-email p {
+      margin: 0.2rem 0 0 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
 
-.nav-links a {
-  margin-left: 2rem;
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-}
+    .nav-links a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
 
-.hero-split {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 4rem 0;
-  background: #fff;
-  overflow: hidden;
-  position: relative;
-  flex-wrap: wrap;
-}
+    .hero-split {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 4rem 0;
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      flex-wrap: wrap;
+    }
 
-.hero-text {
-  padding-left: 200px;
-  max-width: 50%;
-  box-sizing: border-box;
-}
+    .hero-text {
+      padding-left: 200px;
+      max-width: 50%;
+      box-sizing: border-box;
+    }
 
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: #2b2b2b;
-}
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #2b2b2b;
+    }
 
-.details {
-  display: flex;
-  gap: 4rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
+    .details {
+      display: flex;
+      gap: 4rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
 
-.details strong,
-.task strong {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
-  color: #000;
-}
+    .details strong,
+    .task strong {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      color: #000;
+    }
 
-.details p {
-  font-size: 1rem;
-  color: #444;
-  margin: 0;
-}
+    .details p {
+      font-size: 1rem;
+      color: #444;
+      margin: 0;
+    }
 
-.task p {
-  color: #666;
-  max-width: 500px;
-  line-height: 1.6;
-  font-size: 1rem;
-}
+    .task p {
+      color: #666;
+      max-width: 500px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
 
-.hero-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  max-width: 50%;
-  z-index: 0;
-}
+    .hero-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      max-width: 50%;
+      z-index: 0;
+    }
 
-.hero-image img {
-  height: auto;
-  max-height: 900px;
-  object-fit: cover;
-}
+    .hero-image img {
+      height: auto;
+      max-height: 900px;
+      object-fit: cover;
+    }
 
-/* Carousel */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  padding: 2rem 0;
-  background-color: #fff;
-}
+    /* Carousel */
+    .carousel-header {
+      padding-left: 200px;
+      padding-right: 2rem;
+      margin-bottom: 1rem;
+    }
 
-.carousel-track {
-  display: flex;
-  gap: 1rem;
-  transition: transform 0.3s ease-in-out;
-  padding-left: 200px;
-  padding-right: 2rem;
-}
+    .carousel-header h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111;
+    }
 
-.carousel-card {
-  flex: 0 0 800px;
-  height: 628px;
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  padding: 2rem;
-  box-sizing: border-box;
-}
+    .carousel-header h2 span {
+      color: #888;
+      font-weight: 400;
+    }
 
-.card-text {
-  max-width: 50%;
-  z-index: 2;
-}
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      padding: 2rem 0;
+      background-color: #fff;
+    }
 
-.card-text h2 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 1rem;
-}
+    .carousel-track {
+      display: flex;
+      gap: 1rem;
+      transition: transform 0.3s ease-in-out;
+      padding-left: 200px;
+      padding-right: 2rem;
+    }
 
-.card-text p {
-  font-size: 1rem;
-  color: #333;
-}
+    .carousel-card {
+      flex: 0 0 800px;
+      height: 628px;
+      background-color: #f5f5f5;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
 
-.card-image {
-  position: absolute;
-  right: -80px;
-  bottom: 100px;
-  top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  z-index: 1;
-}
+    .card-text {
+      max-width: 50%;
+      z-index: 2;
+    }
 
-.card-image img {
-  height: 60%;
-  object-fit: contain;
-}
+    .card-text h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 1rem;
+    }
 
-.carousel-pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-  gap: 8px;
-}
+    .card-text p {
+      font-size: 1rem;
+      color: #333;
+    }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #888;
-  opacity: 0.4;
-  transition: opacity 0.3s;
-}
+    .card-image {
+      position: absolute;
+      right: -80px;
+      bottom: 100px;
+      top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 1;
+    }
 
-.dot.active {
-  opacity: 1;
-  background: #fff;
-}
+    .card-image img {
+      height: 60%;
+      object-fit: contain;
+    }
 
-/* Carousel heading */
-.carousel-header {
-  padding-left: 200px;
-  padding-right: 2rem;
-  margin-bottom: 1rem;
-}
+    .carousel-pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      gap: 8px;
+    }
 
-.carousel-header h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #111;
-}
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #888;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+    }
 
-.carousel-header h2 span {
-  color: #888;
-  font-weight: 400;
-}
+    .dot.active {
+      opacity: 1;
+      background: #000;
+    }
 
-/* Metrics Section */
-.metrics-section {
-  margin: 4rem 0;
-}
+    /* Metrics Section */
+    .metrics-section {
+      margin: 4rem 0;
+    }
 
-.metrics {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  text-align: center;
-  padding: 3rem 2rem;
-  background: #fff;
-}
+    .metrics {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #fff;
+    }
 
-.metric h3 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin: 0;
-  color: #000;
-}
+    .metric h3 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+      color: #000;
+    }
 
-.metric p {
-  font-size: 1rem;
-  color: #888;
-  margin-top: 0.5rem;
-}
+    .metric p {
+      font-size: 1rem;
+      color: #888;
+      margin-top: 0.5rem;
+    }
 
-/* Insight Section */
-.insight {
-  display: flex;
-  background-color: #e8f7ff;
-  padding: 4rem 200px;
-  gap: 4rem;
-}
+    .insight {
+      display: flex;
+      background-color: #e8f7ff;
+      padding: 4rem 200px;
+      gap: 4rem;
+    }
 
-.insight-labels {
-  flex: 1;
-}
+    .insight-labels {
+      flex: 1;
+    }
 
-.insight-labels h4 {
-  font-size: 0.875rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
+    .insight-labels h4 {
+      font-size: 0.875rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
 
-.insight-labels ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    .insight-labels ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.insight-labels li {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #222;
-}
+    .insight-labels li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
 
-.insight-text {
-  flex: 2;
-  color: #111;
-  font-size: 1rem;
-  line-height: 1.7;
-}
+    .insight-text {
+      flex: 2;
+      color: #111;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
 
-/* ✅ Responsive */
-@media (max-width: 1024px) {
-  .hero-split {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
+    /* ✅ Responsive */
+    @media (max-width: 1024px) {
+      .hero-split {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
 
-  .hero-text {
-    padding-left: 1.5rem;
-    max-width: 100%;
-    z-index: 2;
-  }
+      .hero-text {
+        padding-left: 1.5rem;
+        max-width: 100%;
+        z-index: 2;
+      }
 
-  .hero-image {
-    position: static;
-    max-width: 100%;
-    margin-top: 2rem;
-    text-align: center;
-  }
+      .hero-image {
+        position: static;
+        max-width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+      }
 
-  .hero-image img {
-    max-width: 90%;
-    height: auto;
-  }
+      .hero-image img {
+        max-width: 90%;
+        height: auto;
+      }
 
-  .insight {
-    flex-direction: column;
-    padding: 2rem;
-  }
+      .insight {
+        flex-direction: column;
+        padding: 2rem;
+      }
 
-  .metrics {
-    flex-direction: column;
-    gap: 2rem;
-  }
+      .metrics {
+        flex-direction: column;
+        gap: 2rem;
+      }
 
-  .carousel-track {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
+      .carousel-track {
+        flex-direction: column;
+        padding: 0 1rem;
+      }
 
-  .carousel-card {
-    flex: 1 0 auto;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem;
-  }
+      .carousel-card {
+        flex: 1 0 auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+      }
 
-  .card-text {
-    max-width: 100%;
-  }
+      .card-text {
+        max-width: 100%;
+      }
 
-  .card-image {
-    position: static;
-    width: 100%;
-    margin-top: 2rem;
-  }
+      .card-image {
+        position: static;
+        width: 100%;
+        margin-top: 2rem;
+      }
 
-  .card-image img {
-    width: 100%;
-    height: auto;
-  }
-}
+      .card-image img {
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -352,7 +350,7 @@ body {
     </nav>
   </header>
 
-   <section class="hero-split">
+  <section class="hero-split">
     <div class="hero-text">
       <h1>The Perfume Shop</h1>
       <div class="details">
@@ -380,102 +378,104 @@ body {
     </div>
   </section>
 
-      <section class="carousel-header">
-  <h2>A/B Testing <span>[EvolvAI]</span></h2>
-</section>
-  
-<div class="carousel-container">
-  <div class="carousel-track" id="carouselTrack">
+  <section class="carousel-header">
+    <h2>A/B Testing <span>[EvolvAI]</span></h2>
+  </section>
 
-    <div class="carousel-card">
-      <div class="card-text">
-        <h2>Image Carousel Reposition</h2>
-        <p>This test is to utilise real estate on the page efficiently, providing better visibility for other elements on the page</p>
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="carousel-card">
+        <div class="card-text">
+          <h2>Image Carousel Reposition</h2>
+          <p>This test is to utilise real estate on the page efficiently, providing better visibility for other elements on the page</p>
+        </div>
+        <div class="card-image">
+          <img src="images/carousel-1.png" alt="Reposition carousel" />
+        </div>
       </div>
-      <div class="card-image">
-        <img src="images/carousel-1.png" alt="Reposition carousel" />
+
+      <div class="carousel-card">
+        <div class="card-text">
+          <h2>Price Strikethrough</h2>
+          <p>Better use of vertical hierarchy, improved above-the-fold visibility</p>
+        </div>
+        <div class="card-image">
+          <img src="images/price-strike.png" alt="Price strike" />
+        </div>
+      </div>
+
+      <div class="carousel-card">
+        <div class="card-text">
+          <h2>Flexible Payment Options</h2>
+          <p>Flexible payment options placed by the price make higher-priced items feel more accessible and manageable.</p>
+        </div>
+        <div class="card-image">
+          <img src="images/flex-payment.png" alt="Flexible payment" />
+        </div>
+      </div>
+
+      <div class="carousel-card">
+        <div class="card-text">
+          <h2>Price/Size Styling</h2>
+          <p>Changed from circles to rectangles to utilise vertical space</p>
+        </div>
+        <div class="card-image">
+          <img src="images/price-size.png" alt="Price/size layout" />
+        </div>
+      </div>
+
+      <div class="carousel-card">
+        <div class="card-text">
+          <h2>Number of Reviews Visible</h2>
+          <p>Aids in decision-making, builds trust and credibility</p>
+        </div>
+        <div class="card-image">
+          <img src="images/reviews.png" alt="Review count" />
+        </div>
       </div>
     </div>
 
-    <div class="carousel-card">
-      <div class="card-text">
-        <h2>Price Strikethrough</h2>
-        <p>Better use of vertical hierarchy, improved above-the-fold visibility</p>
-      </div>
-      <div class="card-image">
-        <img src="images/price-strike.png" alt="Price strike" />
-      </div>
+    <div class="carousel-pagination" id="carouselDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
     </div>
+  </div>
 
-    <div class="carousel-card">
-      <div class="card-text">
-        <h2>Flexible Payment Options</h2>
-        <p>Flexible payment options placed by the price make higher-priced items feel more accessible and manageable.</p>
-      </div>
-      <div class="card-image">
-        <img src="images/flex-payment.png" alt="Flexible payment" />
-      </div>
-    </div>
-
-    <div class="carousel-card">
-      <div class="card-text">
-        <h2>Price/Size Styling</h2>
-        <p>Changed from circles to rectangles to utilise vertical space</p>
-      </div>
-      <div class="card-image">
-        <img src="images/price-size.png" alt="Price/size layout" />
-      </div>
-    </div>
-
-    <div class="carousel-card">
-      <div class="card-text">
-        <h2>Number of Reviews Visible</h2>
-        <p>Aids in decision-making, builds trust and credibility</p>
-      </div>
-      <div class="card-image">
-        <img src="images/reviews.png" alt="Review count" />
-      </div>
-    </div>
-    
   <section class="metrics-section">
-  <div class="metrics">
-    <div class="metric">
-      <h3>200K+</h3>
-      <p>Additional conversions</p>
+    <div class="metrics">
+      <div class="metric">
+        <h3>200K+</h3>
+        <p>Additional conversions</p>
+      </div>
+      <div class="metric">
+        <h3>1.5M+</h3>
+        <p>Additional Revenue.</p>
+      </div>
+      <div class="metric">
+        <h3>162</h3>
+        <p>Tests in Evolv + Insider.</p>
+      </div>
     </div>
-    <div class="metric">
-      <h3>1.5M+</h3>
-      <p>Additional Revenue.</p>
-    </div>
-    <div class="metric">
-      <h3>162</h3>
-      <p>Test in Evolv + Insider.</p>
-    </div>
-  </div>
 
-  <div class="insight">
-    <div class="insight-labels">
-      <h4>Data Informed Design</h4>
-      <ul>
-        <li>ContentSquare</li>
-        <li>Competitor analysis</li>
-        <li>Store Visit Feedback</li>
-      </ul>
+    <div class="insight">
+      <div class="insight-labels">
+        <h4>Data Informed Design</h4>
+        <ul>
+          <li>ContentSquare</li>
+          <li>Competitor analysis</li>
+          <li>Store Visit Feedback</li>
+        </ul>
+      </div>
+      <div class="insight-text">
+        <p>
+          Using ContentSquare’s Zoning Analysis, I identified that users were highly engaged with the flexible payment options, which also correlated with strong conversion rates. This insight led me to reposition these options above the fold to increase visibility. I also collaborated with EvolvAI and used competitor analysis to inform variant ideas. Additionally, insights gathered from a store visit revealed that customers were confused about pricing differences between online and in-store promotions. This feedback inspired the introduction of a price strike-through format online (instead of “Save £££”) to provide clearer price transparency and align expectations.
+        </p>
+      </div>
     </div>
-    <div class="insight-text">
-      <p>
-        Using ContentSquare’s Zoning Analysis, I identified that users were highly engaged with the flexible payment options, which also correlated with strong conversion rates. This insight led me to reposition these options above the fold to increase visibility. I also collaborated with EvolvAI and used competitor analysis to inform variant ideas. Additionally, insights gathered from a store visit revealed that customers were confused about pricing differences between online and in-store promotions. This feedback inspired the introduction of a price strike-through format online (instead of “Save £££”) to provide clearer price transparency and align expectations.
-      </p>
-    </div>
-  </div>
-
-     <div class="carousel-pagination" id="carouselDots">
-    <span class="dot active" data-index="0"></span>
-    <span class="dot" data-index="1"></span>
-    <span class="dot" data-index="2"></span>
-    <span class="dot" data-index="3"></span>
-    <span class="dot" data-index="4"></span>
-  </div>
-</section>
+  </section>
 </body>
 </html>
