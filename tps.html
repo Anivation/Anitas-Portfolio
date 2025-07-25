@@ -263,7 +263,83 @@
         width: 100%;
         height: auto;
       }
-    }
+
+      .metrics-section {
+  margin: 4rem 0;
+}
+
+/* Top Metrics */
+.metrics {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.metric h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+}
+
+.metric p {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* Insight Section */
+.insight {
+  display: flex;
+  background-color: #e8f7ff;
+  padding: 4rem 200px;
+  gap: 4rem;
+}
+
+.insight-labels {
+  flex: 1;
+}
+
+.insight-labels h4 {
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.insight-labels ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insight-labels li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.insight-text {
+  flex: 2;
+  color: #111;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .insight {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .metrics {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -364,6 +440,39 @@
     </div>
 
   </div> <!-- End of carousel-track -->
+
+  <section class="metrics-section">
+  <div class="metrics">
+    <div class="metric">
+      <h3>200K+</h3>
+      <p>Additional conversions</p>
+    </div>
+    <div class="metric">
+      <h3>1.5M+</h3>
+      <p>Additional Revenue.</p>
+    </div>
+    <div class="metric">
+      <h3>162</h3>
+      <p>Test in Evolv + Insider.</p>
+    </div>
+  </div>
+
+  <div class="insight">
+    <div class="insight-labels">
+      <h4>Data Informed Design</h4>
+      <ul>
+        <li>ContentSquare</li>
+        <li>Competitor analysis</li>
+        <li>Store Visit Feedback</li>
+      </ul>
+    </div>
+    <div class="insight-text">
+      <p>
+        Using ContentSquare’s Zoning Analysis, I identified that users were highly engaged with the flexible payment options, which also correlated with strong conversion rates. This insight led me to reposition these options above the fold to increase visibility. I also collaborated with EvolvAI and used competitor analysis to inform variant ideas. Additionally, insights gathered from a store visit revealed that customers were confused about pricing differences between online and in-store promotions. This feedback inspired the introduction of a price strike-through format online (instead of “Save £££”) to provide clearer price transparency and align expectations.
+      </p>
+    </div>
+  </div>
+</section>
 
   <div class="carousel-pagination" id="carouselDots">
     <span class="dot active" data-index="0"></span>
