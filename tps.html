@@ -109,6 +109,7 @@
       object-fit: cover;
     }
 
+    
     /* Carousel */
     .carousel-container {
       width: 100%;
@@ -216,7 +217,23 @@
         max-width: 90%;
         height: auto;
       }
-    }
+      
+    .carousel-header {
+  padding-left: 200px;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.carousel-header h2 span {
+  color: #888;
+  font-weight: 400;
+}
 
     @media (max-width: 768px) {
       .carousel-track {
@@ -289,6 +306,10 @@
       <img src="images/portfolio mockup tps .png" alt="PDP mockup on laptop" />
     </div>
   </section>
+
+  <section class="carousel-header">
+  <h2>A/B Testing <span>[EvolvAI]</span></h2>
+</section>
 
   <div class="carousel-container">
     <div class="carousel-track" id="carouselTrack">
