@@ -29,7 +29,107 @@
       color: #111;
       font-weight: 500;
     }
-    
+
+    .hero-split {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 4rem 0;
+  background: #ffecec;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  padding-left: 200px;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #2b2b2b;
+}
+
+.details {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.details strong {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.details p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+.task strong {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.task p {
+  color: #666;
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 50%;
+  z-index: 0;
+}
+
+.hero-image img {
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-split {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    padding-left: 1.5rem;
+    max-width: 100%;
+    z-index: 2;
+  }
+
+  .hero-image {
+    position: static;
+    max-width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
   </style>
 </head>
 <body>
@@ -43,3 +143,33 @@
      <a href="about.html">About</a>
     </nav>
   </header>
+<section class="hero-split">
+  <div class="hero-text">
+    <h1>The Perfume Shop</h1>
+
+    <div class="details">
+      <div>
+        <strong>ROLE</strong>
+        <p>UX/UI<br>A/B Testing<br>UX Strategy</p>
+      </div>
+      <div>
+        <strong>DATE</strong>
+        <p>2025</p>
+      </div>
+    </div>
+
+    <div class="task">
+      <strong>TASK</strong>
+      <p>
+        I lead the end-to-end UX strategy—driving experimentation, insight, and inclusive design.
+        I ran the A/B testing programme, optimising journeys through data-led hypotheses.
+        Using Contentsquare, I uncover behavioural friction to inform high-impact UX/UI improvements.
+        I also lead our 2025 Accessibility Redesign, targeting AA WCAG compliance.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/tps-mockup.png" alt="PDP mockup on laptop" />
+  </div>
+</section>
